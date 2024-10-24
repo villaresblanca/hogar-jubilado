@@ -1,18 +1,34 @@
-/*Styles*/
-/*body background*/
+
+/*Estilos Página Intro (Index)*/
+    /*Background Body Video*/
+        /*Eliminar márgenes y ajustar el body*/
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /*Ajustar el vídeo de fondo*/
+        #body-bg-video
+
+
+/*
+    body background
 body {
     background-color: black;
     background-image: url("../img/bg6.png");
     background-repeat: no-repeat;
     background-position-x: center;
 }
-/*Centrar body*/
+    Centrar body
 .center-body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
+
+
 /*Contenedor*/
 .container {
     display: flex;
