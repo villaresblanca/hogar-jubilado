@@ -39,11 +39,19 @@ body {
     color: #ffffff
 
 }
+
+/*Div fila juega o muere*/
+.fila1 {
+    color:#ff0000;
+    text-shadow: 2px 2px 2px #000000;
+}
+
 .description1 {
     color: #ffffff;
 
 }
 
+/*ChatGPT*/
 /* Ocultar contenido */
 .hidden {
     display: none;
@@ -117,7 +125,7 @@ button:hover {
         height: 240px;
     }
 }
-
+/*Fin CHATPT*/
 
 /*Font*/
 .creepster-regular {
