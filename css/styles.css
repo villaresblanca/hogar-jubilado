@@ -1,0 +1,179 @@
+/*Styles*/
+/*body background*/
+body {
+    background-color: black;
+    background-image: url("../img/bg6.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+/*Centrar body*/
+.center-body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Contenedor*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*Titulo web*/
+.titulo{
+    color: #ff0000;
+    font-size: 50px;
+    margin: 10px;
+    /*border: 0px solid #000000;
+    border-radius: 10px;*/
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*Contenido juego*/
+.prueba-bg {
+    background-color: #00000067;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff
+
+}
+.description1 {
+    color: #ffffff;
+
+}
+
+/* Imagen Hogar Jubilado */
+  /* El modal que cubre toda la pantalla */
+.HJ-modal {
+  display: none; /* Se oculta por defecto */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b0; /* El fondo oscuro tras la imagen*/
+}
+
+  /* La imagen dentro del modal: inicia pequeña */
+.jub-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%; /* Tamaño max de la imagen */
+  max-height: 80%;
+  transform: scale(0); /* Comienza pequeña la imagen */
+  opacity: 0; /* Comienza transparente */
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Transición de zoom y opacidad */
+  transform-origin: top left; /* El origen del zoomes la esquina superior izquierda */
+}
+
+  /* Cuando el modal está visible, la imagen se expande */
+.HJ-modal.show  .jub-modal-content {
+  transform: scale(1); /* Aumenta al tamaño normal */
+  opacity: 1; /* Se hace completamente visible */
+}
+
+  /* La "X" de cierre */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  /*font-weight: bold;*/
+  cursor: pointer;
+}
+
+  /* Animación de zoom */
+.jub-modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.65;
+  animation-name: zoom;
+  animation-duration: 0.65;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform: scale(0);}
+  to {-webkit-transform: scale(1);}
+}
+@keyframes zoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+/*Responsive*/
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+    /* dispositivos móviles en orientación vertical */
+}
+/* Fin Imagen Hogar Jubilado */
+
+
+/*Font*/
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-light {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-style: normal;
+}
+
+.cormorant-garamond-regular {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 400;
+      font-style: normal;
+}
+
+.cormorant-garamond-medium {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-style: normal;
+}
+
+.cormorant-garamond-semibold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-garamond-bold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-garamond-light-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-garamond-regular-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-garamond-medium-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-garamond-semibold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-garamond-bold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+  
