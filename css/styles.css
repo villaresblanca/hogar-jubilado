@@ -44,10 +44,80 @@ body {
 
 }
 
-/*Responsive*/
-@media (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
-    /* dispositivos móviles en orientación vertical */
+/* Ocultar contenido */
+.hidden {
+    display: none;
 }
+
+/* Ajustes para que la imagen y el video estén centrados */
+#Jubilado-ImgContainer, #Jubilado-VidContainer {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Ajustes de botón */
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive para pantallas móviles */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 36px;
+    }
+
+    .tittle {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    img {
+        width: 100%; /* La imagen se adapta al ancho del contenedor */
+        height: auto;
+    }
+
+    video {
+        width: 100%; /* El video se adapta al ancho del contenedor */
+    }
+}
+
+/* Ajustes para pantallas más grandes (monitores) */
+@media (min-width: 1024px) {
+    .titulo {
+        font-size: 60px;
+    }
+
+    .tittle {
+        font-size: 30px;
+    }
+
+    img {
+        width: 180px;
+        height: auto;
+    }
+
+    video {
+        width: 320px;
+        height: 240px;
+    }
+}
+
 
 /*Font*/
 .creepster-regular {
