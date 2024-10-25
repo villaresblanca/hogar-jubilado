@@ -31,9 +31,7 @@ showImageButton.addEventListener('click', () => {
     imageButtonContainer.classList.add('hidden');
 });
 
-// Volver al inicio al pulsar "Volver a Inicio"
+// Muestra la ubicación "Mostrar Ubicación"
 closeImageButton.addEventListener('click', () => {
-    imageContainer.classList.add('hidden'); 
-    content.classList.remove('hidden');
-    playVideoButton.classList.remove('hidden');
+    window.location.href = 'https://maps.app.goo.gl/otJonpTUtk2zGJaPA';
 });
