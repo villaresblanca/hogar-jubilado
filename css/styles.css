@@ -1,6 +1,18 @@
+/*Fondo de pantalla completo para el vídeo de fondo*/
+#body-bg-fog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    color: white;
     padding: 20px;
     background-color: #000000;
     display: flex;
@@ -8,7 +20,21 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
+
+/*??? no se para que es esto*/
+.container {
+    z-index: 1;
+}
+
+/*Ajustar el video a fullscreen*/
+.fullscreen-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
 /*
 body {
     display: flex;
@@ -20,7 +46,7 @@ body {
 }
 */
 h1 {
-    color: #333;
+    color: #ff0000;
 }
 
 p {
@@ -32,14 +58,14 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #741818;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #410707;
 }
 
 .hidden {
@@ -64,7 +90,6 @@ button:hover {
 /*tamaño foto*/
 img {
     width: 100%;
-    
     height: auto;
 }
 
@@ -76,17 +101,60 @@ video {
 }
 
 /*botón volver a inicio*/
-
 #closeImageButton {
-    display: block;
+    /*display: block;*/
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #dc3545;
+    background-color: #741818;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 #closeImageButton:hover {
-    background-color: #c82333;
+    background-color: #410707;
 }
+
+/*Font*/
+.creepster-regular {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.neuton-extralight { 
+    font-family: "Neuton", serif; 
+    font-weight: 200; 
+    font-style: normal;
+}
+
+.neuton-light {
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.neuton-regular {
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.neuton-regular-italic {
+    font-family: "Neuton", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.neuton-bold {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.neuton-extrabold {
+    font-family: "Neuton", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  
