@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video e Imagen</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Página principal-->
+    <div class="container">
+        <div class="content">
+            <h1>Título de la Página</h1>
+            <p>Este es un párrafo que se ocultará cuando comience el video.</p>
+
+    <!--Botón vídeo-->
+            <button id="playVideoButton">Abrir Video</button>
+        </div>
+
+    <!--Página vídeo-->
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="media/video/jubilado.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+<!--Botón Imagen-->
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">Mostrar Imagen</button>
+        </div>
+
+<!--Página Imagen-->
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="media/img/jubilado2.jpg" alt="Imagen">
+
+<!--Volver Inicio-->
+            <button id="closeImageButton">Volver a Inicio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

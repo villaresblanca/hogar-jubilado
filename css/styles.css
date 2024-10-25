@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/*
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+*/
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#videoContainer {
+   margin-top: 20px;
+    /* width: 56.25vh;  
+    height: 100vh;  
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+
+/*tamaño foto*/
+img {
+    width: 100%;
+    
+    height: auto;
+}
+
+/*tamaño vídeo*/
+video {
+    width: 100%;  /* Ajustar el video al ancho del contenedor */
+    height: 100%; /* Ajustar el video a la altura del contenedor */
+    object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
+}
+
+/*botón volver a inicio*/
+
+#closeImageButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#closeImageButton:hover {
+    background-color: #c82333;
+}
