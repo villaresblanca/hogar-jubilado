@@ -9,13 +9,12 @@
     z-index: -1;
 }
 
-/*Ocultar video de fondo en la parte del video*/
-.background-hidden #body-bg-fog {
-    display: none;
-}
+    /*Ocultar video de fondo en la parte del video*/
+    .background-hidden #body-bg-fog {
+        display: none;
+    }
 
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
     color: white;
     padding: 20px;
@@ -41,12 +40,16 @@ body {
     background-color: #000000;
 }
 
-h1 {
-    color: #ff0000;
+.titulo1 {
+    font-size: 58px;
+    color: #df2222;
+    text-shadow: 2px 2px 2px #000000;
+    margin-bottom: 2vh;
 }
 
-p {
-    font-size: 18px;
+.frase1 {
+    font-size: 20px;
+    color: #cecece;
 }
 
 button {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Video e Imagen</title>
+    <title>Juega o Muere</title>
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <!--Google Fonts-->
@@ -22,23 +22,23 @@
         <!--Página principal-->
         <div class="container">
             <div class="content">
-                <h1 class="creepster-regular">JUEGA O MUERE</h1>
-                <p class="neuton-bold">Jugaré, no abandonaré...</p>
+                <h1 class="titulo1 creepster-regular">JUEGA O MUERE</h1>
+                <p class="frase1 neuton-bold">Jugaré, no abandonaré...</p>
 
         <!--Botón vídeo-->
-                <button id="playVideoButton">Continuar</button>
+                <button id="playVideoButton" class="neuton-light">Continuar</button>
             </div>
 
         <!--Página vídeo-->
             <div id="videoContainer" class="hidden">
-                <video muted id="video" class="fullscreen-video" width="640" height="360" controls>
+                <video muted id="video" class="fullscreen-video" controls>
                     <source src="media/video/jubilado.mp4" type="video/mp4">
                 </video>
             </div>
 
         <!--Botón Imagen-->
             <div id="imageButtonContainer" class="hidden">
-                <button id="showImageButton">Pista</button>
+                <button id="showImageButton" class="neuton-light">Pista</button>
             </div>
 
         <!--Página Imagen-->
