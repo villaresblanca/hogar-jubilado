@@ -40,27 +40,45 @@ body {
     background-color: #000000;
 }
 
+/*Animación de difuminado*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .titulo1 {
     font-size: 58px;
     color: #df2222;
     text-shadow: 2px 2px 2px #000000;
     margin-bottom: 2vh;
+    opacity: 0; /*Inicia invisible*/
+    animation: fadeIn 4s ease-out forwards; /*Difuminado de 2s*/
 }
 
 .frase1 {
     font-size: 20px;
     color: #cecece;
+    opacity: 0; /*Inicia invisible*/
+    animation: fadeIn 4s ease-out forwards; /*Difuminado de 2s*/
 }
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px;
     cursor: pointer;
     background-color: #741818;
     color: white;
     border: none;
     border-radius: 5px;
+}
+
+.button-continue {
+    opacity: 0; /*Inicia invisible*/
+    animation: fadeIn 4s ease-out forwards; /*Difuminado de 2s*/
 }
 
 button:hover {
